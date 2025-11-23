@@ -7,7 +7,7 @@
     --text-dark:black;
     --text-light:grey;
     --extra-light:white;
-    --max-width:1200px;
+    --max-width:100%;
 }
 *{
     padding: 0;
@@ -269,6 +269,45 @@ color:white;
 }
  .titre-h7 {
     font-size: 3rem;
+    font-weight: bold;
+    margin-top : 30px; 
+    padding: 0;
+    color: var(--primary-color);
+}
+.Expériences {
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 10%;
+}
+.titre-h8 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #470707;
+    font-size: 2rem;
+}
+.Expériences-item {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-left: 4px solid #470707;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    
+}
+.Expériences-item:hover{
+    transform: translateY(-8px);
+
+}
+.titre-h9 {
+     text-align: center;
+    margin-bottom: 1.5rem;
+    color: #470707;
+    font-size: 2rem;
+
+}
+.titre-10 {
+     font-size: 3rem;
     font-weight: bold;
     margin-top : 30px; 
     padding: 0;

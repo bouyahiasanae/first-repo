@@ -38,7 +38,7 @@ body {
   flex: 1;
   padding: 1rem;
 }
-@media (width<800px) {
+@media (width<750px) {
   .container1, .container2 {
     flex-direction: column;
     justify-content: center;
@@ -50,6 +50,7 @@ body {
     width: 50%;
     height: 50%;
   }
+
 }
 .col2 img {
     justify-content: center;
@@ -235,6 +236,18 @@ h1 {
     border: 2px solid black;
     height: 30%;
   }
+  nav .checkbox {
+    display: none;
+}
+nav input {
+    display: none;
+}
+nav .checkbox i {
+    font-size: 2rem;
+    color:black;
+    cursor:pointer;
+}
+
   
   
 

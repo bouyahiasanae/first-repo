@@ -3,7 +3,7 @@
 :root {
     --primary-color: #900b0b;
     --primary-color-dark:#470707;
-    --secondary-color:#f6e0e8;
+    --secondary-color: #fef6f7;
     --text-dark:black;
     --text-light:grey;
     --extra-light:white;
@@ -82,7 +82,7 @@ ul li a:hover {
     background-color: var(--secondary-color);
 }
 .section__container {
-    min-height: 100vh;
+    min-height: 80vh;
     max-width: var(--max-width);
     margin: auto;
     padding: 1rem;
@@ -112,6 +112,7 @@ ul li a:hover {
 }
 .title span{
     font-weight: 600;
+    color: var(--primary-color);
 }
 .description {
     line-height: 1.5rem;
@@ -156,8 +157,14 @@ ul li a:hover {
 }
 .image img{
     width: min(25rem,50%);
+    margin-top: 40px;
     border-radius: 50%;
+     border: 4px solid var(--primary-color);
+     transition: transform 0.3s ease;
 
+}
+.image :hover {
+    transform: translateY(-10px);
 }
 @media (width <750px){
     nav .checkbox{
@@ -168,7 +175,7 @@ ul li a:hover {
         width: 100%;
         height: calc(100vh -85px);
         left: -100%;
-        top: 85px;
+        top: 80px;
         background-color: var(--extra-light);
         flex-direction: column;
         justify-content: center;
@@ -180,6 +187,7 @@ ul li a:hover {
     }
     ul li a {
         font-size: 1.25rem;  
+    
     }
     .section__container{
         padding: 10rem 1rem 5rem 1rem;
@@ -196,4 +204,73 @@ ul li a:hover {
     }
 
 }
+.section__container1{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
 
+.section__container1 h6{
+    font-size: 3rem;
+    margin: 0; 
+    padding: 0;
+    color: var(--primary-color);
+}
+  .Formations {
+    display: grid;
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px,250px));
+    gap: 10px;
+    padding: 40px;
+    margin-top: 40px;
+  }
+  .card {
+    background-color:white;
+    border-radius: 10%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.20);
+    padding: 25px;
+    transition: transform 0.3s ease;
+    border-left: 6px solid var(--primary-color);
+    
+  }
+  .card:hover {
+    transform: translateY(-8px);
+    background-color:var(--primary-color-dark);
+    color: white;
+    border-left-color:white ;
+  }
+  
+  .card p {
+    margin: 8px 0;
+    line-height: 1.5;
+    color: var(--text-dark);
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .card h2, h3, h4, h5 {
+    margin-top: 30px;
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+.card:hover h2,
+.card:hover h3,
+.card:hover h4,
+.card:hover h5 {
+color:white;
+}
+.card p:hover {
+    color: white;
+}
+ .titre-h7 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top : 30px; 
+    padding: 0;
+    color: var(--primary-color);
+}

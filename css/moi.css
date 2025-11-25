@@ -97,6 +97,7 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    margin-left: 2rem;
 
 }
 .subtitle{
@@ -171,7 +172,7 @@ ul li a:hover {
     display: flex;
     border: 2px solid var(--primary-color-dark);
 }
-.image img :hover{
+.image:hover{
     transform: translateY(-10px);
 }
 
@@ -223,7 +224,7 @@ ul li a:hover {
 
 .section__container1 h6{
     font-size: 3rem;
-    margin: 0; 
+    margin-left: 2rem; 
     padding: 0;
     color: var(--primary-color);
 }
@@ -338,10 +339,10 @@ color:white;
 }
 .titre-10 {
     font-size: 3rem;
-    font-weight: bold;
-    margin-top : 30px; 
+    font-weight: bold; 
     padding: 0;
     color: var(--primary-color);
+    margin-bottom: 2.2rem;
 }
 .date {
     color: #900b0b;
@@ -351,9 +352,76 @@ color:white;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 1.6rem 1rem 1rem 0;
   transition: 0.3s ease;
-  color:var(--primary-color-dark);
+  color:var(--primary-color);
   gap: 0.8rem;
+  border: 2px solid var(--primary-color-dark);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
 }
+.social-icons a:hover{
+  color: white;
+  transform: scale(1.2) translateY();
+  background-color:var(--primary-color-dark);
+  box-shadow: 0 0 15px var(--primary-color-dark);
+  transform: scale(1.1);
+}
+.contact-section {
+    margin-top: 1rem;
+    margin-left: 2.6rem;
+}
+.contact-container {
+    display: grid;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 50%;
+    padding: 1rem;
+    border: 2px solid var(--primary-color);
+    background-color: #fff;
+    border-radius: 10%;
+    outline: none;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: none;
+}
+
+.send-btn {
+    width: 120px;
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10%px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: .3s;
+}
+
+.send-btn:hover {
+    background-color: var(--primary-color-dark);
+}
+

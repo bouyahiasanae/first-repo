@@ -19,7 +19,6 @@ a{
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    border: 0.2rem solid var(--primary-color-dark);
 }
 nav {
     width: 100%;
@@ -145,18 +144,22 @@ ul li a:hover {
 .embauchez-moi{
     background-color: var(--primary-color);
     color: white;
+     transition: transform 0.3s ease;
 
 }
 .embauchez-moi:hover{
     background-color: var(--primary-color-dark);
+    transform: translateY(-8px);
 
 }
 .portfolio{
     color: var(--primary-color);
+    transition: transform 0.3s ease;
 }
 .portfolio:hover{
     background-color: var(--primary-color-dark);
     color: white;
+    transform: translateY(-8px);
 }
 .image {
    
@@ -176,8 +179,8 @@ ul li a:hover {
     display: flex;
     border: 2px solid var(--primary-color-dark);
 }
-.image:hover{
-    transform: translateY(-10px);
+.image img:hover{
+    transform: scale(1.1);
 }
 
 @media (width <750px){
@@ -324,7 +327,7 @@ color:white;
     margin-bottom: 1.4rem;
     padding: 1rem;
     background-color: white;
-    border-left: 4px solid #470707;
+    border-left: 4px solid var(--primary-color-dark);
     border-right: 4px solid var(--primary-color-dark);
     border-radius: 5px;
     transition: transform 0.3s ease;
@@ -353,26 +356,18 @@ color:white;
     font-size: 1.8rem;
 }
 .social-icons a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  margin: 1.6rem 1rem 1rem 0;
-  transition: 0.3s ease;
-  color:var(--primary-color);
-  gap: 1rem;
-  background-color: rgb(237, 235, 235);
-  border: 3px solid var(--primary-color-dark);
-  width: 3.4rem;
-  height: 3.4rem;
-  border-radius: 70%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    width: 3.4rem;
+    height: 3.4rem;
 }
-.social-icons a:hover{
-  color: white;
-  transform: scale(1.2) translateY();
-  background-color:var(--primary-color-dark);
-  box-shadow: 0 0 15px var(--primary-color-dark);
-  transform: scale(1.1);
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.2) translateY();
+    background-color: var(--primary-color);
+    border-radius: 20px;
 }
 .contact-section {
     margin-top: 1rem;
@@ -438,4 +433,16 @@ color:white;
     margin-top: 40px;
     margin-bottom: 40px;
   }
+#main {
+  display: none;
+}
+
+#main.show {
+  display: block;
+}
+
+#main {
+  cursor: pointer;
+  font-size: 2rem;
+}
 

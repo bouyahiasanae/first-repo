@@ -122,9 +122,10 @@ ul li a:hover {
     color: var(--primary-color);
 }
 .description {
-    line-height: 1.5rem;
+    line-height: 2rem;
     color: var(--text-light);
     margin-bottom: 2rem;
+    font-size: 1.4rem;
 }
 .action__btns{
     display: flex;
@@ -140,17 +141,7 @@ ul li a:hover {
     border-radius: 10px;
     transition: 0.3s;
     cursor: pointer;
-}
-.embauchez-moi{
-    background-color: var(--primary-color);
-    color: white;
-     transition: transform 0.3s ease;
-
-}
-.embauchez-moi:hover{
-    background-color: var(--primary-color-dark);
-    transform: translateY(-8px);
-
+    width: 15rem;
 }
 .portfolio{
     color: var(--primary-color);
@@ -242,6 +233,7 @@ ul li a:hover {
     padding: 40px;
     margin-top: 40px;
   }
+  
   .card {
     background-color:white;
     border-radius: 10%;
@@ -250,6 +242,7 @@ ul li a:hover {
     transition: transform 0.3s ease;
     border-left: 4px solid var(--primary-color-dark);
   }
+  
   .card:hover {
     transform: translateY(-8px);
     background-color:var(--primary-color-dark);
@@ -425,24 +418,43 @@ color:white;
 .send-btn:hover {
     background-color: var(--primary-color-dark);
 }
-.divider {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    height: 0.2rem;
-    background-color: var(--primary-color-dark);
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-#main {
-  display: none;
+.footer {
+    background-color: white; 
+    padding: 15px;
+    height: 5rem;
+    display: flex;
+    align-items: center;
 }
 
-#main.show {
-  display: block;
+.footer-content {
+    width: var(--max-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    
 }
 
-#main {
-  cursor: pointer;
-  font-size: 2rem;
+.footer-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
 }
+
+.footer-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.footer-links li a:hover {
+     border-top-color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    color: var(--primary-color);; 
+   
+}
+
+
 
